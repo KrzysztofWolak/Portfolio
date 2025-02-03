@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mikroservices</title>
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <ul>
+                <li><a href="./index.html">&nbsp; Home &nbsp; </a></li>
+            </ul>
+        </nav>
+
+        <section class="project">
+            <div>
+                <h2>Mikroserwisy REST API</h2>
+                <article>
+                    <p>
+                        Rest API na bazie mikroserwisów. Projekt, który zajął mi zdecydowanie najwięcej czasu na implementację. Ma przemyślaną logikę biznesową, która pozwala na rejestr studentów, rejestr kursów a także możliwość zapisu studenta na dany kurs. Wszystko w oparciu o spring boot. <br>
+                        Pierwotnie korzystałem z bazy MongoDB i Postgresa jednak niedawno edytowałem projekt zostając tylko przy Postgresie. Do weryfikacji projektu używałem Postmana. Oczywiście napisałem też komplet testów jednostkowych przy użyciu JUnit i Mockito a także Jacoco do sprawdzenia pokrycia testów w kodzie. Apka posiada Gateway który rozdziela zapytania zależnie od potrzeby, nie trzeba wysyłać zapytań bezpośrednio do danego serwisu.<br>
+                        Następnym krokiem rozbudowy aplikacji jest stworzenie frontendu, planuję aby zrobić to w oparciu o React.
+                        Przedstawiam krótką galerię z Apki oraz zachęcam do zapoznania sie z jej kodem na github (link pod galerią).
+                    </p>
+                    <h4>Wszystkie serwisy w Spring Eureka</h4>
+                    <a target="_blank" href="./files/microservices/eureka.png"><img src="./files/microservices/eureka.png" alt=""></a>
+                    <h4>Zapytania kierowane do Gateway:</h4>
+                    <a target="_blank" href="./files/microservices/gateway.png"><img src="./files/microservices/gateway.png" alt=""></a>
+                    <h4>Przykładowe endpointy aplikacji </h4>
+                    <a target="_blank" href="./files/microservices/endpoints.png"><img src="./files/microservices/endpoints.png" alt=""></a>
+                    <h4>Testy jednostkowe</h4>
+                    <a target="_blank" href="./files/microservices/testsJUnit.png"><img src="./files/microservices/testsJUnit.png" alt="" ></a>
+                    <a href="https://github.com/KrzysztofWolak/microservices_project"> KOD APKI NA github.pl </a>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="contact-section">
+            <h1 class="section-heading">Pracujmy razem!</h1>
+            <p>Znajdź mnie:</p>
+            <p>
+                <a href="https://github.com/KrzysztofWolak"> <img src="./files/github_13171412.png"> Github</img> </a>
+                <a href="https://www.linkedin.com/in/krzysztof-wolak/"> <img src="./files/linkedin_2504923.png"> Linkedin</i> </a>
+                <a href="mailto: crisswol@interia.pl"> <img src="./files/mail_2772369.png"> Email</i> </a>
+            </p>
+        </section>
+
+    </main>
+</body>
+
+</html>

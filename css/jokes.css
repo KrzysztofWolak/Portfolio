@@ -1,0 +1,43 @@
+
+body {
+    background-color: rgb(67, 67, 67);
+}
+.random-joke, .joke-result {
+    background-color: #ffffff9c;
+    margin: auto;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+.random-joke, .joke-result, .joke-btn {
+    border: solid 2px black;
+    border-radius: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.random-joke {
+    background:linear-gradient(to left, rgb(25, 167, 210), rgb(26, 26, 207));  
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 700px;
+    height: 500px;
+    margin-top: 10vh;
+}
+.joke-result {
+    width: 60%;
+    height: 60%;
+}
+.joke-btn {
+    margin: auto;
+    width: 70%;
+    height: 40px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.joke-btn:hover{
+background-color: #7ccc51ad;
+}
+
+@media (width <= 750px) {
+    
+}
